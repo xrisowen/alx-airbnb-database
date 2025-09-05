@@ -1,4 +1,13 @@
 -- ==========================
+-- PostgreSQL
+-- ==========================
+
+-- ==========================
+-- Notes: UUIDs are used as PKs with gen_random_uuid() (Postgres extension pgcrypto must be enabled).
+-- CREATE EXTENSION IF NOT EXISTS pgcrypto;
+-- ==========================
+
+-- ==========================
 -- User Table
 -- ==========================
 CREATE TABLE users (
