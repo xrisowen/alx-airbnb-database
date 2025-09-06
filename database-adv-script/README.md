@@ -1,1 +1,2 @@
-Added joins , subqueries, and aggregations
+Added joins , subqueries, aggregations, and index performance.
+
