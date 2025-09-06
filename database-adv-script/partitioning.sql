@@ -51,3 +51,9 @@ CREATE INDEX idx_bookings_property_id ON bookings (property_id) INCLUDE (start_d
 --CREATE INDEX idx_bookings_start_date ON bookings (start_date);
 
 -- Done 🚀
+
+-- Example query to test performance improvement
+EXPLAIN ANALYZE
+SELECT * 
+FROM bookings
+WHERE start_date BETWEEN '2024-03-01' AND '2024-03-31';
