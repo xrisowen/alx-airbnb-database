@@ -21,3 +21,4 @@ JOIN bookings b ON u.user_id = b.user_id
 GROUP BY u.first_name
 ORDER BY total_bookings DESC;
 ```
+...
