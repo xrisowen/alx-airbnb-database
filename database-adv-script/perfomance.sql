@@ -25,7 +25,10 @@ INNER JOIN
     ON b.property_id = p.property_id
 LEFT JOIN 
     payments py 
-    ON b.booking_id = py.booking_id;
+    ON b.booking_id = py.booking_id
+WHERE pay.status = 'Completed'   -- Only completed payments
+  AND b.start_date >= '2025-09-01'   -- Bookings from 2025 onward
+ORDER BY b.start_date DESC;
 	
 --Analyze the query’s performance using EXPLAIN and identify any inefficiencies.
 EXPLAIN ANALYZE
